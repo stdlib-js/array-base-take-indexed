@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-07)
+## Unreleased (2025-12-16)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`646dd31`](https://github.com/stdlib-js/stdlib/commit/646dd311efc708a3ec45134b6e8fc1ccb1a92470) - **bench:** refactor to use string interpolation in `array/base/take-indexed` [(#9048)](https://github.com/stdlib-js/stdlib/pull/9048) _(by DivitJain26, Athan Reines)_
 -   [`07906c5`](https://github.com/stdlib-js/stdlib/commit/07906c5508c1c7f596a6f19a13aed21cacbb058d) - **docs:** fix description _(by Athan Reines)_
 
 </details>
@@ -24,9 +25,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   DivitJain26
 
 </section>
 
