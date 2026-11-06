@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,36 +16,32 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MAIN //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Takes elements from an indexed array.
 *
-* @param {Collection} x - input array
-* @param {NonNegativeIntegerArray} indices - list of indices
-* @returns {Array} output array
+* ## Notes
+*
+* -   The function does **not** perform bounds checking. If an index is less than zero or greater than the maximum index of `x`, the value of the corresponding element in the output array is undefined.
+*
+* @param x - input array
+* @param indices - list of element indices
+* @returns output array
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
-* var indices = [ 3, 1, 2, 0 ];
 *
-* var y = take( x, indices );
-* // returns [ 4, 2, 3, 1 ]
+* var y = take( x, [ 1, 3 ] );
+* // returns [ 2, 4 ]
 */
-function take( x, indices ) {
-	var out;
-	var i;
-
-	out = [];
-	for ( i = 0; i < indices.length; i++ ) {
-		out.push( x[ indices[ i ] ] ); // use `Array#push` to ensure "fast" elements
-	}
-	return out;
-}
+declare function take<T = unknown>( x: Collection<T>, indices: Collection<number> ): Array<T>;
 
 
 // EXPORTS //
 
-module.exports = take;
+export = take;
